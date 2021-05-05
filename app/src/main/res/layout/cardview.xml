@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+            <ImageView
+                    android:id="@+id/card_view_gorsel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    tools:srcCompat="@android:drawable/ic_menu_myplaces"/>
+            <TextView
+                    android:id="@+id/card_kitap_ismi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitap Adı"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#685D5D"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/card_view_gorsel"
+                    android:layout_toEndOf="@+id/card_view_gorsel"
+            />
+            <TextView
+                    android:id="@+id/card_kitap_konu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitap Konusu"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#a9a9a9"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/card_view_gorsel"
+                    android:layout_toEndOf="@+id/card_view_gorsel"
+            />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
